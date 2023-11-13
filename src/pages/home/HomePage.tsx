@@ -1,5 +1,4 @@
 import { SitePage } from "../../styles/siteStyles";
-import { homeContent } from "./_content";
 import CodeBlock from "../../components/_global/CodeBlock";
 
 
