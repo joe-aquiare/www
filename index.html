@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>joeaquiare.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <style>
+
+      * {
+        font-family: 'Fragment Mono', monospace;
+        font-family: 'Oxygen Mono', monospace;  
+        padding: 0;
+        margin: 0;
+        font-smooth: never;
+        -webkit-font-smoothing : none;
+        font-size: 12px;
+        line-height: 1.5em;
+      }
+
+      html,
+      body, 
+      #root {
+        width: 100%;
+        height: 100%;
+        background-color: #222323;
+      }
+
+      html {
+        overflow-y: scroll;
+      }
+
+      @media only screen and (max-width: 800px) {
+
+        * {
+          font-size: 18px;
+        }
+
+        html,
+        body, 
+        #root {
+          overflow-x: hidden;
+        }
+
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
