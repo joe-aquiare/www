@@ -6,7 +6,7 @@ function BlogBack() {
     const navigate = useNavigate();
     return (
         <BlogBackButtonWrapper>
-            <BlogBackButton onClick={(e) => {
+            <BlogBackButton onClick={() => {
                 navigate("/blog");
             }}>
                 ← Back
