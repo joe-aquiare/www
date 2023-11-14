@@ -10,14 +10,16 @@ interface SiteImageProps {
 function SiteImage(props: SiteImageProps) {
   return (
     <SiteImageContainer>
-      <SiteImageElement
-        onClick={(_) => {
-          if(props.clickToOpen) {
-            window.open(props.src);
-          }
-        }}
-        src={props.src}
-      />
+      {
+        (props.clickToOpen) ? <SiteImageElement
+          onClick={(_) => {
+              window.open(props.src);
+          }}
+          src={props.src}
+        /> : <SiteImageElementClickless
+          src={props.src}
+        />
+      }
     </SiteImageContainer>
   );
 }
@@ -43,4 +45,11 @@ const SiteImageElement = styled.img`
     opacity: 0.8;
     cursor: pointer;
   }
+`;
+
+// Site image with no click through
+const SiteImageElementClickless = styled.img`
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 1;
 `;
