@@ -44,6 +44,14 @@ export const TextBlock = styled.p`
 `;
 
 // Section header for a blog
+export const SectionHeader = styled.h1`
+  font-size: 18px;
+  font-weight: 400;
+  line-height: -2px;
+  margin-bottom: calc(${siteConstants.dimensions.global.spacing} - 10px);
+`;
+
+// Section header for a blog
 export const BlogSectionHeader = styled.h1`
   font-size: 18px;
   font-weight: 400;
@@ -100,4 +108,35 @@ export const SiteListItem = styled.li`
     color: ${siteConstants.colorScheme.accent};
     padding: 0px 2px;
   }
+`;
+
+export const SiteTable = styled.table`
+  width: 100%;
+  border: 1px solid ${siteConstants.colorScheme.accent};
+  margin-top: ${siteConstants.dimensions.global.spacing};
+  margin-bottom: ${siteConstants.dimensions.global.spacing};
+  border-collapse: collapse;
+`;
+
+export const SiteTableHeader = styled.th`
+  padding: 3px;
+  background-color: ${siteConstants.colorScheme.accent};
+  color: ${siteConstants.colorScheme.dark};
+  text-align: left;
+  border: 1px solid ${siteConstants.colorScheme.accent};
+  border-right: 1px solid ${siteConstants.colorScheme.dark};
+
+  &:last-child {
+    border-right: 1px solid ${siteConstants.colorScheme.accent};
+  }
+`;
+
+export const SiteTableRow = styled.tr`
+  border: 1px solid ${siteConstants.colorScheme.accent};
+`;
+
+export const SiteTableData = styled.td`
+  padding: 3px;
+  border-right: 1px solid ${siteConstants.colorScheme.accent};
+  border: 1px solid ${siteConstants.colorScheme.accent};
 `;

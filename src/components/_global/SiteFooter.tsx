@@ -33,7 +33,7 @@ const SiteFooterContainer = styled.div`
   position: absolute;
   margin: -1px;
   bottom: 0px;
-  border: 1px solid ${siteConstants.colorScheme.light};
+  border: 1px solid ${siteConstants.colorScheme.medium};
   height: fit-content;
   width: 100%;
   padding-top: 4px;

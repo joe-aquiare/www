@@ -17,7 +17,7 @@ export default SiteNavigation;
 
 // Container for the navigation element
 const SiteNavigationContainer = styled.div`
-  border: 1px solid ${siteConstants.colorScheme.light};
+  border: 1px solid ${siteConstants.colorScheme.medium};
   height: calc(
     ${siteConstants.dimensions.siteHeader.height} +
       ${siteConstants.dimensions.global.spacing}
@@ -27,10 +27,7 @@ const SiteNavigationContainer = styled.div`
   position: relative;
   @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
     border: none;
-    height: calc(
-      ${siteConstants.dimensions.siteHeader.height} +
-        ${siteConstants.dimensions.global.spacing} + 20px
-    );
+    height: calc(${siteConstants.dimensions.siteHeader.height} + ${siteConstants.dimensions.global.spacing} + 20px);
   }
 `;
 

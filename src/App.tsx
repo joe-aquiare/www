@@ -65,8 +65,8 @@ const SiteContent = styled.div`
   top: ${siteConstants.dimensions.siteContent.margin};
   color: ${siteConstants.colorScheme.light};
   max-width: ${siteConstants.dimensions.siteContent.width};
-  border: 1px solid ${siteConstants.colorScheme.light};
-  box-shadow: -1px 1px 0px ${siteConstants.colorScheme.light};
+  border: 1px solid ${siteConstants.colorScheme.medium};
+  box-shadow: -5px 5px 0px ${siteConstants.colorScheme.light};
   margin: 0 auto;
   display: block;
   position: relative;
@@ -88,5 +88,5 @@ const SiteFooterSpacing = styled.div`
 `;
 
 const SiteBottomSpacing = styled.div`
-  height: 50px;
+  height: 55px;
 `;

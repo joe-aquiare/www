@@ -1,6 +1,7 @@
 {
   "colorScheme": {
     "light": "#f0f6f0",
+    "medium": "#f0f6f0",
     "dark": "#222323",
     "accent": "#be955c"
   },
