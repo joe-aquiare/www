@@ -120,6 +120,10 @@ export const SiteTable = styled.table`
   margin-left: 1px;
 `;
 
+export const SiteTableBody = styled.tbody`
+
+`;
+
 export const SiteTableHeader = styled.th`
   padding: 3px;
   background-color: ${siteConstants.colorScheme.accent};
