@@ -3,6 +3,7 @@ import styled from "styled-components";
 // Props for a site image
 interface SiteImageProps {
   src: string;
+  clickToOpen?: boolean;
 }
 
 // Site image element
@@ -11,7 +12,9 @@ function SiteImage(props: SiteImageProps) {
     <SiteImageContainer>
       <SiteImageElement
         onClick={(_) => {
-          window.open(props.src);
+          if(props.clickToOpen) {
+            window.open(props.src);
+          }
         }}
         src={props.src}
       />
@@ -26,6 +29,8 @@ const SiteImageContainer = styled.div`
   max-width: 100%;
   overflow: hidden;
   display: grid;
+  box-shadow: none;
+  
 `;
 
 // Site image

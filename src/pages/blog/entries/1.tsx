@@ -8,7 +8,7 @@ import SiteImage from "../../../components/_global/SiteImage";
 export const info_1 = {
     title: "Interfacing with animation curves in GameMaker",
     subtitle: "And why you should care",
-    date: "11-10-23",
+    date: "11-13-23",
     route: "1"
 };
 
