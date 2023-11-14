@@ -116,6 +116,8 @@ export const SiteTable = styled.table`
   margin-top: ${siteConstants.dimensions.global.spacing};
   margin-bottom: ${siteConstants.dimensions.global.spacing};
   border-collapse: collapse;
+  box-shadow: -2px 2px 0px ${siteConstants.colorScheme.accent};
+  margin-left: 1px;
 `;
 
 export const SiteTableHeader = styled.th`
@@ -125,6 +127,7 @@ export const SiteTableHeader = styled.th`
   text-align: left;
   border: 1px solid ${siteConstants.colorScheme.accent};
   border-right: 1px solid ${siteConstants.colorScheme.dark};
+  border-style: dashed;
 
   &:last-child {
     border-right: 1px solid ${siteConstants.colorScheme.accent};
