@@ -1,15 +1,15 @@
-import BlogBack from "../../../../components/_global/BlogBack";
-import BlogHeader from "../../../../components/_global/BlogHeader";
-import CodeBlock from "../../../../components/_global/CodeBlock";
-import PageBreak from "../../../../components/_global/PageBreak";
-import SiteImage from "../../../../components/_global/SiteImage";
-import { BlogSection, ExternalLink, SiteBlog, SiteList, SiteListItem, TextBlock, TextHighlight } from "../../../../styles/siteStyles";
+import { BlogSectionHeader, ExternalLink, SiteBlog, SiteList, SiteListItem, TextBlock, TextHighlight } from "../../../styles/siteStyles";
+import BlogBack from "../../../components/_global/BlogBack";
+import BlogHeader from "../../../components/_global/BlogHeader";
+import CodeBlock from "../../../components/_global/CodeBlock";
+import PageBreak from "../../../components/_global/PageBreak";
+import SiteImage from "../../../components/_global/SiteImage";
 
-export const info_11_10_2023 = {
+export const info_1 = {
     title: "Interfacing with animation curves in GameMaker",
     subtitle: "And why you should care",
     date: "11-10-23",
-    route: "11_10_23"
+    route: "1"
 };
 
 const codeBlock1 = 
@@ -101,17 +101,13 @@ draw_sprite_ext(
 	image_alpha
 );`;
 
-function BlogPost_11_10_2023() {
-
-    
-
-    const info = info_11_10_2023;
+function BlogPost1() {
+    const info = info_1;
     return (
         <SiteBlog>
             <BlogBack />
-            <PageBreak />
             <BlogHeader title={info.title} subtitle={info.subtitle} date={info.date} />
-            <BlogSection>An Into To Animation Curves</BlogSection>
+            <BlogSectionHeader>An Into To Animation Curves</BlogSectionHeader>
             <TextBlock>
                 Animation curves are an interesting and useful feature tucked away into the notorious "drag-and-drop" subset of user creation tools inside GameMaker. They allow us to define bezier curves for use inside our games mainly for, as you may have guessed, animating. In this blog entry I want to briefly expose to you the method which I use to extract data from these curves programmatically, not just for animation, but for many practical purposes.
             </TextBlock>
@@ -210,4 +206,4 @@ function BlogPost_11_10_2023() {
         </SiteBlog>
     );
 }
-export default BlogPost_11_10_2023;
+export default BlogPost1;

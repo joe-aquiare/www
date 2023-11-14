@@ -1,45 +1,47 @@
 {
-    "colorScheme": {
-        "light": "#f0f6f0",
-        "dark": "#222323",  
-        "accent": "#be955c"
+  "colorScheme": {
+    "light": "#f0f6f0",
+    "dark": "#222323",
+    "accent": "#be955c"
+  },
+  "dimensions": {
+    "global": {
+      "spacing": "8px"
     },
-    "dimensions": {
-        "global": {
-            "spacing": "8px"
-        },
-        "siteContent": {
-            "width": "700px",
-            "height": "800px",
-            "margin": "25px",
-            "mobileWidth": "800px"
-        },
-        "siteHeader": {
-            "height": "50px"
-        }
+    "siteContent": {
+      "width": "700px",
+      "height": "800px",
+      "margin": "25px",
+      "mobileWidth": "800px"
     },
-    "pages": [
-        {
-            "name": "home",
-            "to": "home"
-        },
-        {
-            "name": "contact",
-            "to": "contact"
-        },
-        {
-            "name": "blog",
-            "to": "blog"
-        }
-    ],
-    "footerLinks": [
-        {
-            "name": "twitter",
-            "to": "https://www.twitter.com/pngsequence"
-        },
-        {
-            "name": "instagram",
-            "to": "https://www.instagram.com/pngsequence/"
-        }
-    ]
+    "siteHeader": {
+      "height": "50px"
+    }
+  },
+  "pages": [
+    {
+      "name": "home",
+      "to": "home"
+    },
+    {
+      "name": "contact",
+      "to": "contact"
+    },
+    {
+      "name": "credits",
+      "to": "credits"
+    },
+    {
+      "name": "music",
+      "to": "music"
+    },
+    {
+      "name": "art",
+      "to": "art"
+    },
+    {
+      "name": "blog",
+      "to": "blog"
+    }
+  ]
 }

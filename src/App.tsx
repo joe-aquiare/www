@@ -1,20 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { styled } from "styled-components";
-import SiteNavigation from "./components/_global/SiteNavigation"
+import SiteNavigation from "./components/_global/SiteNavigation";
 import SiteFooter from "./components/_global/SiteFooter";
-import HomePage from "./pages/home/HomePage";
-import ContactPage from "./pages/contact/ContactPage";
-import BlogPage from "./pages/blog/BlogPage";
-import siteConstants from "./data/constants/siteConstants.json"
-import { blogEntries } from "./data/content/blog";
-import { useEffect } from "react";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import siteConstants from "./data/constants/siteConstants.json";
+import blogEntries from "./pages/blog/BlogEntries";
+import Music from "./pages/Music";
+import Art from "./pages/Art";
+import Credits from "./pages/Credits";
 
+// Base app element
 function App() {
-  useEffect(() => {
-    window.process = {
-      ...window.process,
-    };
-  }, []);
   return (
     <>
       <SiteContainer>
@@ -22,30 +20,38 @@ function App() {
           <BrowserRouter>
             <SiteNavigation />
             <Routes>
-              <Route index path="/" element={<HomePage    /> } />
-              <Route path="/home"    element={<HomePage    /> } />
-              <Route path="/contact" element={<ContactPage /> } />
-              <Route path="/blog"    element={<BlogPage    /> } />
+              <Route index path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/credits" element={<Credits />} />
+              <Route path="/music" element={<Music />} />
+              <Route path="/art" element={<Art />} />
+              <Route path="/blog" element={<Blog />} />
               {
-                blogEntries.map((entry, i) => {
-                  return <Route 
-                    key={i}
-                    path={"/blog/" + entry.route}    
-                    element={entry.element()}
+                // Map blog entires to their respective route
+                blogEntries.map((entry: any, i: number) => {
+                  return (
+                    <Route
+                      key={i}
+                      path={"/blog/" + entry.route}
+                      element={entry.element()}
                     />
+                  );
                 })
               }
             </Routes>
             <SiteFooter />
           </BrowserRouter>
+          <SiteFooterSpacing />
         </SiteContent>
-        <SiteFooterSpacing />
+        <SiteBottomSpacing />
       </SiteContainer>
     </>
-  )
+  );
 }
 export default App;
 
+// Container for the site
 const SiteContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -54,12 +60,13 @@ const SiteContainer = styled.div`
   top: 0;
 `;
 
+// Container for site content
 const SiteContent = styled.div`
   top: ${siteConstants.dimensions.siteContent.margin};
   color: ${siteConstants.colorScheme.light};
   max-width: ${siteConstants.dimensions.siteContent.width};
-  min-height: ${siteConstants.dimensions.siteContent.height};
   border: 1px solid ${siteConstants.colorScheme.light};
+  box-shadow: -1px 1px 0px ${siteConstants.colorScheme.light};
   margin: 0 auto;
   display: block;
   position: relative;
@@ -72,11 +79,14 @@ const SiteContent = styled.div`
   }
 `;
 
+// Spacing that comes after the site footer
 const SiteFooterSpacing = styled.div`
-  height: 60px;
-  width: 100%;
-  margin-top: ${siteConstants.dimensions.siteContent.margin};
+  margin-top: 40px;
   @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
     margin-top: none;
   }
+`;
+
+const SiteBottomSpacing = styled.div`
+  height: 50px;
 `;
