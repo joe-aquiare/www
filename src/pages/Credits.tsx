@@ -85,20 +85,6 @@ function Credits() {
           <SiteTableRow>
             <SiteTableData>
               <ExternalLink
-                href="https://www.youtube.com/watch?v=-CBwIXnbUuY"
-                target="_blank"
-              >
-                Oddity
-              </ExternalLink>
-            </SiteTableData>
-            <SiteTableData>
-              Dialogue programming, graphics & animation framework
-            </SiteTableData>
-          </SiteTableRow>
-
-          <SiteTableRow>
-            <SiteTableData>
-              <ExternalLink
                 href="https://wolfjawstudios.com"
                 target="_blank"
               >
@@ -258,19 +244,7 @@ function Credits() {
             </SiteTableData>
             <SiteTableData>Original soundtrack</SiteTableData>
           </SiteTableRow>
-
-          <SiteTableRow>
-            <SiteTableData>
-              <ExternalLink
-                href="https://www.youtube.com/watch?v=-CBwIXnbUuY"
-                target="_blank"
-              >
-                Oddity
-              </ExternalLink>
-            </SiteTableData>
-            <SiteTableData>Original soundtrack</SiteTableData>
-          </SiteTableRow>
-
+          
           <SiteTableRow>
             <SiteTableData>
               <ExternalLink
