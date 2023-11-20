@@ -107,7 +107,7 @@ function BlogPost1() {
         <SiteBlog>
             <BlogBack />
             <BlogHeader title={info.title} subtitle={info.subtitle} date={info.date} />
-            <BlogSectionHeader>An Into To Animation Curves</BlogSectionHeader>
+            <BlogSectionHeader>An Intro To Animation Curves</BlogSectionHeader>
             <TextBlock>
                 Animation curves are an interesting and useful feature tucked away into the notorious "drag-and-drop" subset of user creation tools inside GameMaker. They allow us to define bezier curves for use inside our games mainly for, as you may have guessed, animating. In this blog entry I want to briefly expose to you the method which I use to extract data from these curves programmatically, not just for animation, but for many practical purposes.
             </TextBlock>
