@@ -4,7 +4,7 @@ import BlogHeader from "../../../components/_global/BlogHeader";
 import SiteImage from "../../../components/_global/SiteImage";
 
 export const info_2 = {
-    title: "Quest 64 Logo Remaster",
+    title: "Quest 64 logo remaster",
     subtitle: "Remastering the timeless logo in HD",
     date: "11-19-23",
     route: "2"
