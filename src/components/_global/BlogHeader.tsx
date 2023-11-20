@@ -26,6 +26,7 @@ export default BlogHeader;
 
 // Container for blog header element
 const BlogHeaderContainer = styled.div`
+  user-select: none;
   color: ${siteConstants.colorScheme.dark};
   margin-bottom: ${siteConstants.dimensions.global.spacing};
   background-color: ${siteConstants.colorScheme.accent};
@@ -48,6 +49,6 @@ const BlogHeaderSubtitle = styled.h1`
 const BlogHeaderDate = styled.h2`
   color: ${siteConstants.colorScheme.accent};
   position: absolute;
-  top: calc(-1em - ${siteConstants.dimensions.global.spacing});
+  top: calc(-14px - ${siteConstants.dimensions.global.spacing});
   right: -2px;
 `;

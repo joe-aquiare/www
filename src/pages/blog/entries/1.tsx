@@ -114,18 +114,18 @@ function BlogPost1() {
             <TextBlock>
                 First off, let's look at what we're presented with when creating a curve:
             </TextBlock>
-            <SiteImage src="/images/blog/11_10_2023/curves_gm_initial.png" />
+            <SiteImage src="/images/blog/1/curves_gm_initial.png" />
             <TextBlock>
-                As you can see, by default, a curve with two points and a slope of zero is created for us. This curve is contained in a <i>channel</i>, which is actually a curve <i>within</i> the initial curve we created. That might be confusing, but thankfully the only confusing part is the terminology. A single curve object can hold multile curves (<i>or "channels" as we just mentioned</i>), but right now we're only looking at a curve with a single channel named <TextHighlight>curve1</TextHighlight>. 
+                As you can see, by default, a curve with two points and a slope of zero is created for us. This curve is contained in a <i>channel</i>, which is actually a curve <i>within</i> the initial curve we created. That might be confusing, but thankfully the only confusing part is the terminology. A single curve object can hold multiple curves (<i>or "channels" as we just mentioned</i>), but right now we're only looking at a curve with a single channel named <TextHighlight>curve1</TextHighlight>. 
             </TextBlock>
             <TextBlock>
                 if we wanted to, we can define multiple channels, which is what I've done here by pressing the "+" button in the upper-left corner of the window (I've also adjusted the values for visibility):
             </TextBlock>
-            <SiteImage src="/images/blog/11_10_2023/curves_gm_multiple.png" />
+            <SiteImage src="/images/blog/1/curves_gm_multiple.png" />
             <TextBlock>
-                We can now see multiple channels in the curve editor window: <TextHighlight>curve1</TextHighlight> in blue, <TextHighlight>curve2</TextHighlight> in red, and <TextHighlight>curve3</TextHighlight> in green. These curves aren't looking too curvy just yet, so let's change that. Clicking the dropdown arrow next to the <i>Curves</i> text in the top left will reveal a window called the <i>Animation Curve Library</i>. This is where you can select <ExternalLink href="https://easings.net" target="_blank">function presets</ExternalLink> for your curve chanels - you can see in the example below, selecting the <i>Elastic</i> option while the <TextHighlight>curve2</TextHighlight> channel was selected resulted in that channel taking the form of an elastic curve:
+                We can now see multiple channels in the curve editor window: <TextHighlight>curve1</TextHighlight> in blue, <TextHighlight>curve2</TextHighlight> in red, and <TextHighlight>curve3</TextHighlight> in green. These curves aren't looking too curvy just yet, so let's change that. Clicking the dropdown arrow next to the <i>Curves</i> text in the top left will reveal a window called the <i>Animation Curve Library</i>. This is where you can select <ExternalLink href="https://easings.net" target="_blank">function presets</ExternalLink> for your curve channels - you can see in the example below, selecting the <i>Elastic</i> option while the <TextHighlight>curve2</TextHighlight> channel was selected resulted in that channel taking the form of an elastic curve:
             </TextBlock>
-            <SiteImage src="/images/blog/11_10_2023/curves_gm_elastic.png" />
+            <SiteImage src="/images/blog/1/curves_gm_elastic.png" />
             <TextBlock>
                 So how do we actually go about using these curves in our code? I have a handy utility function that I use to extract the data from these curves, you can view <TextHighlight>curve_read()</TextHighlight> below: 
             </TextBlock>
@@ -143,9 +143,9 @@ function BlogPost1() {
                 ┗&nbsp;An optional parameter of channel names to request from the curve. By default, an empty array requests all channels to be read.<br /><br />
                 What is returned is a struct representing each of the channels requested and their y values at the provided x position along the curve. To implement this, I'm going to use this custom curve I've created below:
             </TextBlock>
-            <SiteImage src="/images/blog/11_10_2023/curves_gm_custom.png" />
+            <SiteImage src="/images/blog/1/curves_gm_custom.png" />
             <TextBlock>
-                You can see that I've named the channels <TextHighlight>image_xscale</TextHighlight> and <TextHighlight>image_yscale</TextHighlight> respectively. When naming curve channels, it's reccomended to use names that match what they represent. In this case, I'm going to be applying the value of the first curve to a sprite's x scale, and applying the value of the second curve to a sprite's y scale, so these names fit well. 
+                You can see that I've named the channels <TextHighlight>image_xscale</TextHighlight> and <TextHighlight>image_yscale</TextHighlight> respectively. When naming curve channels, it's recommended to use names that match what they represent. In this case, I'm going to be applying the value of the first curve to a sprite's x scale, and applying the value of the second curve to a sprite's y scale, so these names fit well. 
             </TextBlock>
             <TextBlock>
                 For the create event of our test implementation, I just have two simple variables representing a timer and a speed for the animation:
@@ -162,16 +162,16 @@ function BlogPost1() {
             <TextBlock>
                 And ta-da! We have... whatever this is.
             </TextBlock>
-            <SiteImage src="/images/blog/11_10_2023/curves_gm_animated.gif" />
+            <SiteImage src="/images/blog/1/curves_gm_animated.gif" />
             <TextBlock>
                 This is a fairly simple example, but you can probably think of many use cases that come from reading curves. Here are some tips I have for implementing this method:
             </TextBlock>
             <SiteList>
                 <SiteListItem>
-                    Your curves should majorly contain values on the y-axis from -1 to 1. Normalizing these values ensures that you can "stack" these animation values onto a single result variable. An example of this would be, if you want your character to have a "breathing" animation, but your character's scale is usually at 2x, don't have the curve osscilate between 1.8 and 2.2: instead, have the curve osscilate between .9 and 1.1 and multiply the curve value with their initial scale value at 2. That way, the curve's value multiplier will work as expected no matter what the scale of the object is at any given time.
+                    Your curves should majorly contain values on the y-axis from -1 to 1. Normalizing these values ensures that you can "stack" these animation values onto a single result variable. An example of this would be, if you want your character to have a "breathing" animation, but your character's scale is usually at 2x, don't have the curve oscillate between 1.8 and 2.2: instead, have the curve oscillate between .9 and 1.1 and multiply the curve value with their initial scale value at 2. That way, the curve's value multiplier will work as expected no matter what the scale of the object is at any given time.
                 </SiteListItem>
                 <SiteListItem>
-                    Using curve channels as "properties" is a handy way to organize and visualize your animations before they are used in-game. The exmaple above is briefly using this method, But if you have a feeling that you're going to have to animate multiple properties (position offset, scale, rotation, alpha, etc...), it might be smart to do it in a single curve with channels for each of the properties you need. This makes iterating on the animations seamless, and lets you tweak everything in the same place. This of course falls apart if you need different timings for each property... but, the script above can be modified for doing that if needed. Or, of course, you can just fall back on using mulitple curve objects if your project calls for it.
+                    Using curve channels as "properties" is a handy way to organize and visualize your animations before they are used in-game. The example above is briefly using this method, But if you have a feeling that you're going to have to animate multiple properties (position offset, scale, rotation, alpha, etc...), it might be smart to do it in a single curve with channels for each of the properties you need. This makes iterating on the animations seamless, and lets you tweak everything in the same place. This of course falls apart if you need different timings for each property... but, the script above can be modified for doing that if needed. Or, of course, you can just fall back on using multiple curve objects if your project calls for it.
                 </SiteListItem>
                 <SiteListItem>
                     Use the drop-downs next to each curve channel to edit the point values manually. This helps if you're reading a curve with a wrapped x-position timer value and you want to prevent it from hopping from 0.9999 to 1.0001, or something similar. You can just manually set both the beginning and end points to be exactly 1.

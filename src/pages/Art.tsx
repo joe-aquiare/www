@@ -8,6 +8,10 @@ function Art() {
         <SitePage>
             <SectionHeader>Art</SectionHeader>
             <TextBlock>
+                <ExternalLink href="https://www.instagram.com/pngsequence/" target="_blank">Instagram</ExternalLink>&nbsp;
+                <ExternalLink href="https://twitter.com/pngsequence/media" target="_blank">Twitter</ExternalLink>&nbsp;
+            </TextBlock>
+            <TextBlock>
                 I have been creating digital art and illustrations for as long as I can remember. I have been known for my abstract and simple yet striking style. I strive to create distinct art that is both appealing and memorable, and moreover, makes people happy. If you'd like to work with me or commission an art piece, please send me an email.
             </TextBlock>
             <ExternalLink href="/images/art/art_example_robot.png" target="_blank">

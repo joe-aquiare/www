@@ -4,8 +4,8 @@ import siteConstants from "../data/constants/siteConstants.json";
 
 // Inner-site links
 export const SiteLink = styled(Link)`
-  text-decoration: underline !important;
-  color: ${siteConstants.colorScheme.accent} !important;
+  text-decoration: none !important;
+  color: ${siteConstants.colorScheme.accent};
   opacity: 1 !important;
   transition: opacity 0.1s !important;
   &:hover {
@@ -16,8 +16,8 @@ export const SiteLink = styled(Link)`
 
 // External links
 export const ExternalLink = styled.a`
-  text-decoration: underline !important;
-  color: ${siteConstants.colorScheme.accent} !important;
+  text-decoration: none !important;
+  color: ${siteConstants.colorScheme.accent};
   opacity: 1 !important;
   transition: opacity 0.1s !important;
   &:hover {
@@ -30,12 +30,18 @@ export const ExternalLink = styled.a`
 export const SitePage = styled.div`
   padding: ${siteConstants.dimensions.global.spacing};
   height: 100%;
+  @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
+    padding-top: 0px;
+  }
 `;
 
 // Container element for a site blog entry
 export const SiteBlog = styled.div`
   padding: ${siteConstants.dimensions.global.spacing};
   height: 100%;
+  @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
+    padding-top: 0px;
+  }
 `;
 
 // Block of text for any page

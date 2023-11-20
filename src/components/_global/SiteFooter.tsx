@@ -39,6 +39,9 @@ const SiteFooterContainer = styled.div`
   padding-top: 4px;
   @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
     border: none;
+    position: inherit;
+    align-content: center;
+    text-align: center;
   }
 `;
 

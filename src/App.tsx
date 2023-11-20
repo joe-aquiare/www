@@ -74,7 +74,7 @@ const SiteContent = styled.div`
     border: none;
     width: 100%;
     max-width: 100%;
-    min-height: 100%;
+    box-shadow: none;
     top: 0;
   }
 `;
@@ -89,4 +89,7 @@ const SiteFooterSpacing = styled.div`
 
 const SiteBottomSpacing = styled.div`
   height: 55px;
+  @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
+    height: 0px;
+  }
 `;

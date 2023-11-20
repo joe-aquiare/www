@@ -20,7 +20,9 @@ function BlogBack() {
 export default BlogBack;
 
 // Cotnainer for blog back button
-const BlogBackButtonContainer = styled.div``;
+const BlogBackButtonContainer = styled.div`
+  user-select: none;
+`;
 
 // Button for blog back button
 const BlogBackButton = styled(SiteButton)`

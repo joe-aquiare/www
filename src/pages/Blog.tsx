@@ -1,5 +1,7 @@
+import styled from "styled-components";
 import { SectionHeader, SiteLink, SitePage, TextBlock } from "../styles/siteStyles";
 import blogEntries from "./blog/BlogEntries";
+import siteConstants from "../data/constants/siteConstants.json";
 
 // Blog page element
 function Blog() {
@@ -13,9 +15,12 @@ function Blog() {
           // Map blog entires to blog page links
           blogEntries.map((entry: any, i: number) => {
             return (
-              <SiteLink key={i} to={"/blog/" + entry.route}>
-                {entry.date} - {entry.title}
-              </SiteLink>
+              <BlogEntryLink key={i}>
+                <SiteLink to={"/blog/" + entry.route}>
+                  {entry.date} - {entry.title}
+                </SiteLink>
+                <br/>
+              </BlogEntryLink>
             );
           })
         }
@@ -24,3 +29,10 @@ function Blog() {
   );
 }
 export default Blog;
+
+const BlogEntryLink = styled.span`
+  overflow-x: hidden;
+  max-width: calc(100% - ${siteConstants.dimensions.global.spacing});
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+`;
