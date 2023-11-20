@@ -2,19 +2,25 @@ import { SiteLink } from "../../styles/siteStyles";
 import styled from "styled-components";
 import siteConstants from "../../data/constants/siteConstants.json";
 import { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom'
 
 // Site navigation component
 function SiteNavigation() {
+  const location = useLocation();
   return (
     <SiteNavigationContainer>
       <SiteTitleContainer>
-        <SiteTitle to="/home">joeaquiare.site/</SiteTitle>
+        <SiteTitle to="/home">joeaquiare.site<SiteTitlePath>{location.pathname}</SiteTitlePath></SiteTitle>
       </SiteTitleContainer>
       <SiteNavigationLinks />
     </SiteNavigationContainer>
   );
 }
 export default SiteNavigation;
+
+const SiteTitlePath = styled.span`
+  opacity: .5;
+`;
 
 // Container for the navigation element
 const SiteNavigationContainer = styled.div`
@@ -140,6 +146,7 @@ function SiteNavigationLinks() {
           />
           </div>
         ))}
+        <SiteNavigationMobileSpacer/>
       </SiteNavigationMobileToggleContainer>
     </SiteNavigationLinksContainer>
   );
@@ -159,12 +166,18 @@ const SiteNavigationLinksContainer = styled.ul`
     text-align: center;
     align-content: center;
     margin: 0 auto;
-    padding-bottom: 0px;
   }
 `;
 
 const SiteNavigationMobileToggleContainer = styled.div`
   transition: display .1s;
+`;
+
+const SiteNavigationMobileSpacer = styled.div`
+ @media only screen and (max-width: ${siteConstants.dimensions.siteContent.mobileWidth}) {
+    width: 100%;
+    margin-bottom: 3px;
+  }
 `;
 
 const SiteNavigationMobileToggle = styled.div`

@@ -8,7 +8,7 @@ function Blog() {
   return (
     <SitePage>
       <SectionHeader>Blog</SectionHeader>
-      <TextBlock>
+      <BlogBlock>
         [Latest]
         <br />
         {
@@ -24,7 +24,8 @@ function Blog() {
             );
           })
         }
-      </TextBlock>
+        [Oldest]
+      </BlogBlock>
     </SitePage>
   );
 }
@@ -35,4 +36,9 @@ const BlogEntryLink = styled.span`
   max-width: calc(100% - ${siteConstants.dimensions.global.spacing});
   text-wrap: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
+`;
+
+const BlogBlock = styled(TextBlock)`
+  margin-bottom: 0px;
 `;

@@ -33,6 +33,10 @@
       "to": "credits"
     },
     {
+      "name": "projects",
+      "to": "projects"
+    },
+    {
       "name": "music",
       "to": "music"
     },

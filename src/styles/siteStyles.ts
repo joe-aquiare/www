@@ -68,7 +68,7 @@ export const BlogSectionHeader = styled.h1`
 // Site-wide button
 export const SiteButton = styled.button`
   min-width: 80px;
-  height: 25px;
+  height: fit-content;
   border: 1px solid ${siteConstants.colorScheme.accent};
   background-color: transparent;
   margin-top: 2px;
@@ -122,8 +122,9 @@ export const SiteTable = styled.table`
   margin-top: ${siteConstants.dimensions.global.spacing};
   margin-bottom: ${siteConstants.dimensions.global.spacing};
   border-collapse: collapse;
-  box-shadow: -2px 2px 0px ${siteConstants.colorScheme.accent};
-  margin-left: 1px;
+  &:last-of-type{
+    margin-bottom: 0px;
+  }
 `;
 
 export const SiteTableBody = styled.tbody`
