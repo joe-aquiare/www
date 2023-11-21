@@ -1,7 +1,7 @@
 import { SiteBlog, TextBlock } from "../../../styles/siteStyles";
-import BlogBack from "../../../components/_global/BlogBack";
-import BlogHeader from "../../../components/_global/BlogHeader";
-import SiteImage from "../../../components/_global/SiteImage";
+import BlogBack from "../../../components/global/BlogBack";
+import BlogHeader from "../../../components/global/BlogHeader";
+import SiteImage from "../../../components/global/SiteImage";
 
 export const info_2 = {
     title: "Quest 64 logo remaster",

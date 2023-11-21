@@ -1,4 +1,4 @@
-import PageBreak from "../components/_global/PageBreak";
+import PageBreak from "../components/global/PageBreak";
 import { ExternalLink, SectionHeader, SitePage, TextBlock } from "../styles/siteStyles";
 import ReactPlayer from 'react-player'
 

@@ -1,9 +1,9 @@
 import { BlogSectionHeader, ExternalLink, SiteBlog, SiteList, SiteListItem, TextBlock, TextHighlight } from "../../../styles/siteStyles";
-import BlogBack from "../../../components/_global/BlogBack";
-import BlogHeader from "../../../components/_global/BlogHeader";
-import CodeBlock from "../../../components/_global/CodeBlock";
-import PageBreak from "../../../components/_global/PageBreak";
-import SiteImage from "../../../components/_global/SiteImage";
+import BlogBack from "../../../components/global/BlogBack";
+import BlogHeader from "../../../components/global/BlogHeader";
+import CodeBlock from "../../../components/global/CodeBlock";
+import PageBreak from "../../../components/global/PageBreak";
+import SiteImage from "../../../components/global/SiteImage";
 
 export const info_1 = {
     title: "Interfacing with animation curves in GameMaker",

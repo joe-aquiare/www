@@ -1,7 +1,8 @@
+import { useStoryblok, StoryblokComponent } from '@storyblok/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { styled } from "styled-components";
-import SiteNavigation from "./components/_global/SiteNavigation";
-import SiteFooter from "./components/_global/SiteFooter";
+import SiteNavigation from "./components/global/SiteNavigation";
+import SiteFooter from "./components/global/SiteFooter";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
@@ -14,6 +15,9 @@ import Projects from "./pages/Projects";
 
 // Base app element
 function App() {
+  
+  const story = useStoryblok("/blog/1", { version: 'draft' });
+
   return (
     <>
       <SiteContainer>
@@ -47,6 +51,7 @@ function App() {
           <SiteFooterSpacing />
         </SiteContent>
         <SiteBottomSpacing />
+        <StoryblokComponent blok={story.content} />
       </SiteContainer>
     </>
   );

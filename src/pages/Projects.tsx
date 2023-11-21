@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import { ExternalLink, SectionHeader, SiteButton, SitePage } from "../styles/siteStyles";
-import SiteImage from "../components/_global/SiteImage";
+import { ExternalLink, SectionHeader, SectionHeader2, SiteButton, SitePage } from "../styles/siteStyles";
+import SiteImage from "../components/global/SiteImage";
 import siteConstants from "../data/constants/siteConstants.json";
-import PageBreak from "../components/_global/PageBreak";
+import PageBreak from "../components/global/PageBreak";
 
 // Blog page element
 function Projects() {
   return (
     <SitePage>
+      <SectionHeader>Projects</SectionHeader>
+      <ProjectHeaderSpacing/>
       <ProjectCard>
-        <SectionHeader>Reflectile (Demo) - 2023</SectionHeader>
+        <SectionHeader2>Reflectile (Demo) - 2023</SectionHeader2>
         <a href="https://store.steampowered.com/app/2389610/Reflectile/" target="_blank">
           <SiteImage src="/images/projects/reflectile_card.png" /> 
         </a>
@@ -43,10 +45,15 @@ const ProjectCard = styled.div`
   box-shadow: -5px 5px 0px ${siteConstants.colorScheme.accent};
   margin-left: 5px;
   margin-bottom: 5px;
-  ${SectionHeader} {
+  ${SectionHeader2} {
     padding-bottom: ${siteConstants.dimensions.global.spacing};
   }
 `;
+
+const ProjectHeaderSpacing = styled.div`
+  width: 100%;
+  height: 8px;
+`
 
 const ProjectDescription = styled.p`
   padding-top: ${siteConstants.dimensions.global.spacing};

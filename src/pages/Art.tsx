@@ -1,6 +1,6 @@
 import { ExternalLink, SectionHeader, SitePage, TextBlock } from "../styles/siteStyles";
-import SiteImage from "../components/_global/SiteImage";
-import PageBreak from "../components/_global/PageBreak";
+import SiteImage from "../components/global/SiteImage";
+import PageBreak from "../components/global/PageBreak";
 
 // Art page element
 function Art() {

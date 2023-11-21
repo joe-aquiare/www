@@ -57,6 +57,14 @@ export const SectionHeader = styled.h1`
   margin-bottom: calc(${siteConstants.dimensions.global.spacing} - 10px);
 `;
 
+// Section 2 header for a blog
+export const SectionHeader2 = styled.h1`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -2px;
+  margin-bottom: calc(${siteConstants.dimensions.global.spacing} - 10px);
+`;
+
 // Section header for a blog
 export const BlogSectionHeader = styled.h1`
   font-size: 18px;
