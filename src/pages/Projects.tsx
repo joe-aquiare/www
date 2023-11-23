@@ -8,6 +8,8 @@ import PageBreak from "../components/_global/PageBreak";
 function Projects() {
   return (
     <SitePage>
+      <SectionHeader>Projects</SectionHeader>
+      <div style={{height: "12px"}}/>
       <ProjectCard>
         <SectionHeader>Reflectile (Demo) - 2023</SectionHeader>
         <a href="https://store.steampowered.com/app/2389610/Reflectile/" target="_blank">
