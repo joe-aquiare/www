@@ -16,7 +16,8 @@ function Home() {
         &nbsp;／l、<br/>
         （ﾟ､ ｡ ７<br/>
         &nbsp;&nbsp;l  ~ヽ<br/>
-        &nbsp;&nbsp;じしf_,)ノ<br/>
+        &nbsp;&nbsp;じしf_,)ノ<br/><br/>
+        ^ Atlas :3
       </TextBlock>
     </SitePage>
   );
