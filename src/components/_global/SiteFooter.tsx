@@ -12,12 +12,6 @@ const footerLinks = [
     name: "bluesky",
     to: "https://bsky.app/profile/joeaquiare.site",
   },
-  /*
-  {
-    name: "instagram",
-    to: "https://www.instagram.com/pngsequence/",
-  },
-  */
   {
     name: "email",
     to: "mailto:joeaquiare@gmail.com",

@@ -9,6 +9,7 @@ function Contact() {
       <ContactBlock>
         Email:&nbsp;&nbsp;&nbsp;→&nbsp;<ExternalLink href="mailto:joeaquiare@gmail.com" target="_blank">joeaquiare@gmail.com</ExternalLink><br />
         Twitter:&nbsp;→&nbsp;<ExternalLink href="https://twitter.com/pngsequence" target="_blank">@pngsequence</ExternalLink><br />
+        Bluesky:&nbsp;→&nbsp;<ExternalLink href="https://bsky.app/profile/joeaquiare.site" target="_blank">@joeaquiare.site</ExternalLink><br />
         Discord:&nbsp;→&nbsp;<ExternalLink href="https://discordapp.com/users/142436317203005440" target="_blank">@pngsequence</ExternalLink><br />
       </ContactBlock>
     </SitePage>
