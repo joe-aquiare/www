@@ -8,6 +8,10 @@ const footerLinks = [
     name: "twitter",
     to: "https://www.twitter.com/pngsequence",
   },
+  {
+    name: "bluesky",
+    to: "https://bsky.app/profile/joeaquiare.site",
+  },
   /*
   {
     name: "instagram",
