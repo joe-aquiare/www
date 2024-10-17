@@ -5,12 +5,8 @@ import siteConstants from "../../data/constants/siteConstants.json";
 // Array of footer link content
 const footerLinks = [
   {
-    name: "twitter",
-    to: "https://www.twitter.com/pngsequence",
-  },
-  {
-    name: "bluesky",
-    to: "https://bsky.app/profile/joeaquiare.site",
+    name: "github",
+    to: "https://github.com/joe-aquiare",
   },
   {
     name: "email",
