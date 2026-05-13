@@ -8,6 +8,9 @@ function Blog() {
   return (
     <SitePage>
       <SectionHeader>Blog</SectionHeader>
+      <TextBlock>
+        The blog dream is dead. Be gone!
+      </TextBlock>
       <BlogBlock>
         [Latest]
         <br />

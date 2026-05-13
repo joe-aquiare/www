@@ -23,26 +23,38 @@ function Credits() {
         send me an email.
       </TextBlock>
 
-      <SectionHeader>✦ Programming</SectionHeader>
+      <SectionHeader>Software</SectionHeader>
 
       <SiteTable>
         <SiteTableBody>
 
           <SiteTableRow>
-            <SiteTableHeader style={{ width: "40%" }}>Entity</SiteTableHeader>
+            <SiteTableHeader style={{ width: "40%" }}>Client</SiteTableHeader>
             <SiteTableHeader>Role</SiteTableHeader>
           </SiteTableRow>
 
           <SiteTableRow>
             <SiteTableData>
               <ExternalLink
-                href="https://store.steampowered.com/app/1085660/Destiny_2/"
+                href="https://www.marathonthegame.com/"
                 target="_blank"
               >
-                Destiny 2
+                Marathon
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Web technologies, microservices</SiteTableData>
+            <SiteTableData>Online Services, Accounts, Parental controls</SiteTableData>
+          </SiteTableRow>
+
+          <SiteTableRow>
+            <SiteTableData>
+              <ExternalLink
+                href="https://www.bungie.net/7/en/destiny/"
+                target="_blank"
+              >
+                Destiny 2 - The Final Shape
+              </ExternalLink>
+            </SiteTableData>
+            <SiteTableData>Web Technologies, Microservices</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -52,8 +64,20 @@ function Credits() {
               </ExternalLink>
             </SiteTableData>
             <SiteTableData>
-              Online service integration, service porting
+              Online Services, Service Porting
             </SiteTableData>
+          </SiteTableRow>
+
+          <SiteTableRow>
+            <SiteTableData>
+              <ExternalLink
+                href="https://www.marathonthegame.com/"
+                target="_blank"
+              >
+                League of Legends
+              </ExternalLink>
+            </SiteTableData>
+            <SiteTableData>Launcher, Web Technology</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -66,7 +90,7 @@ function Credits() {
               </ExternalLink>
             </SiteTableData>
             <SiteTableData>
-              Gameplay programming assistance, minigames, inventory
+              Gameplay Programming, Dialogue System
             </SiteTableData>
           </SiteTableRow>
 
@@ -79,7 +103,7 @@ function Credits() {
                 Blue Omen Operation
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Gameplay programming assistance</SiteTableData>
+            <SiteTableData>QA, Dialogue System</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -91,19 +115,31 @@ function Credits() {
                 Wolfjaw Studios
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Website</SiteTableData>
+            <SiteTableData>Website Front-End Development</SiteTableData>
+          </SiteTableRow>
+
+          <SiteTableRow>
+            <SiteTableData>
+              <ExternalLink
+                href="https://catenatools.com"
+                target="_blank"
+              >
+                Catena
+              </ExternalLink>
+            </SiteTableData>
+            <SiteTableData>Website Front-End Development</SiteTableData>
           </SiteTableRow>
 
         </SiteTableBody>
       </SiteTable>
 
-      <SectionHeader>✦ Music</SectionHeader>
+      <SectionHeader>Audio</SectionHeader>
 
       <SiteTable>
         <SiteTableBody>
 
           <SiteTableRow>
-            <SiteTableHeader style={{ width: "40%" }}>Entity</SiteTableHeader>
+            <SiteTableHeader style={{ width: "40%" }}>Client</SiteTableHeader>
             <SiteTableHeader>Role</SiteTableHeader>
           </SiteTableRow>
 
@@ -129,7 +165,7 @@ function Credits() {
               </ExternalLink>
             </SiteTableData>
             <SiteTableData>
-              Animation soundtrack - [SFM] Desert Danger
+              Animation Soundtrack - [SFM] Desert Danger
             </SiteTableData>
           </SiteTableRow>
 
@@ -156,7 +192,7 @@ function Credits() {
                 ChipsGoWOAH
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Animation soundtrack - Week 7 Casting</SiteTableData>
+            <SiteTableData>Animation Soundtrack - Week 7 Casting</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -169,7 +205,7 @@ function Credits() {
               </ExternalLink>
             </SiteTableData>
             <SiteTableData>
-              Animation soundtrack - DESTINY STAR DELIVERY
+              Animation Soundtrack - DESTINY STAR DELIVERY
             </SiteTableData>
           </SiteTableRow>
 
@@ -182,7 +218,7 @@ function Credits() {
                 DESKPOP
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Various compilation tracks</SiteTableData>
+            <SiteTableData>Various Compilation Tracks</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -194,7 +230,7 @@ function Credits() {
                 STAFFcirc
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Various compilation tracks</SiteTableData>
+            <SiteTableData>Various Compilation Tracks</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -206,7 +242,7 @@ function Credits() {
                 HYPERPOP RECORDS
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Various compilation tracks</SiteTableData>
+            <SiteTableData>Various Compilation Tracks</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -218,7 +254,7 @@ function Credits() {
                 Boyphonics
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Compilation tracks</SiteTableData>
+            <SiteTableData>Compilation Tracks</SiteTableData>
           </SiteTableRow>
         
           <SiteTableRow>
@@ -230,7 +266,7 @@ function Credits() {
                 Knuckle Sandwich
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Original soundtrack</SiteTableData>
+            <SiteTableData>Original Soundtrack</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -242,7 +278,7 @@ function Credits() {
                 Blue Omen Operation
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Original soundtrack</SiteTableData>
+            <SiteTableData>Original Soundtrack</SiteTableData>
           </SiteTableRow>
           
           <SiteTableRow>
@@ -254,7 +290,7 @@ function Credits() {
                 Yard Tale
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Original soundtrack</SiteTableData>
+            <SiteTableData>Original Soundtrack</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -266,7 +302,7 @@ function Credits() {
                 Driving Home
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Original soundtrack</SiteTableData>
+            <SiteTableData>Original Soundtrack</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -278,19 +314,19 @@ function Credits() {
                 Khimera: Destroy All Monster Girls
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Original soundtrack</SiteTableData>
+            <SiteTableData>Original Soundtrack</SiteTableData>
           </SiteTableRow>
 
         </SiteTableBody>
       </SiteTable>
 
-      <SectionHeader>✦ Art</SectionHeader>
+      <SectionHeader>Art & Illustration</SectionHeader>
 
       <SiteTable>
         <SiteTableBody>
 
           <SiteTableRow>
-            <SiteTableHeader style={{ width: "40%" }}>Entity</SiteTableHeader>
+            <SiteTableHeader style={{ width: "40%" }}>Client</SiteTableHeader>
             <SiteTableHeader>Role</SiteTableHeader>
           </SiteTableRow>
 
@@ -303,7 +339,7 @@ function Credits() {
                 Cartridge Collection Vol 2
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>T-shirt design</SiteTableData>
+            <SiteTableData>T-shirt Design</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -315,7 +351,7 @@ function Credits() {
                 Video Game Dunkey
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>T-shirt design</SiteTableData>
+            <SiteTableData>T-shirt Design</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -327,7 +363,7 @@ function Credits() {
                 The Yeetee
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Action figure 3D model</SiteTableData>
+            <SiteTableData>Action Figure 3D Model</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -339,7 +375,7 @@ function Credits() {
                 Hypnospace Outlaw
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Vinyl record design</SiteTableData>
+            <SiteTableData>Vinyl Record Design</SiteTableData>
           </SiteTableRow>
           
           <SiteTableRow>
@@ -351,7 +387,7 @@ function Credits() {
                 Nelward
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Album cover</SiteTableData>
+            <SiteTableData>Album Cover</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -375,7 +411,7 @@ function Credits() {
                 That Andy Guy
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Album cover</SiteTableData>
+            <SiteTableData>Album Cover</SiteTableData>
           </SiteTableRow>
 
           <SiteTableRow>
@@ -387,7 +423,7 @@ function Credits() {
                 BARCHboi
               </ExternalLink>
             </SiteTableData>
-            <SiteTableData>Album cover</SiteTableData>
+            <SiteTableData>Album Cover</SiteTableData>
           </SiteTableRow>
           
         </SiteTableBody>

@@ -22,6 +22,10 @@ function Art() {
                 <SiteImage src="/images/art/art_example_boom_small.png"></SiteImage>
             </ExternalLink>
             <PageBreak />
+            <ExternalLink href="/images/art/art_example_gnomes.png" target="_blank">
+                <SiteImage src="/images/art/art_example_gnomes_small.png"></SiteImage>
+            </ExternalLink>
+            <PageBreak />
             <ExternalLink href="/images/art/art_example_night.png" target="_blank">
                 <SiteImage src="/images/art/art_example_night_small.png"></SiteImage>
             </ExternalLink>
@@ -32,10 +36,6 @@ function Art() {
             <PageBreak />
             <ExternalLink href="/images/art/art_example_mages.png" target="_blank">
                 <SiteImage src="/images/art/art_example_mages_small.png"></SiteImage>
-            </ExternalLink>
-            <PageBreak />
-            <ExternalLink href="/images/art/art_example_mages_2.png" target="_blank">
-                <SiteImage src="/images/art/art_example_mages_2.png"></SiteImage>
             </ExternalLink>
             <PageBreak />
             <ExternalLink href="/images/art/art_example_garden.png" target="_blank">
