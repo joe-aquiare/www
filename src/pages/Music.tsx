@@ -1,19 +1,7 @@
-import PageBreak from "../components/_global/PageBreak";
 import { ExternalLink, SectionHeader, SiteListItem, SitePage, SiteUnorderedList, TextBlock } from "../styles/siteStyles";
-import ReactPlayer from 'react-player'
 
 // Music page element
 function Music() {
-  const playerWidth: string = "100%";
-  const playerHeight: string = "160px";
-  const playerOptions: any = {
-    soundcloud: {
-      options: {
-        sharing: true,
-        show_playcount: true,
-      }
-    }
-  };
   return (
     <SitePage>
       <SectionHeader>Music</SectionHeader>
