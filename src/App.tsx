@@ -10,6 +10,7 @@ import blogEntries from "./pages/blog/BlogEntries";
 import Music from "./pages/Music";
 import Art from "./pages/Art";
 import Credits from "./pages/Credits";
+import Projects from "./pages/Projects";
 
 // Base app element
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/credits" element={<Credits />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="/music" element={<Music />} />
               <Route path="/art" element={<Art />} />
               <Route path="/blog" element={<Blog />} />
