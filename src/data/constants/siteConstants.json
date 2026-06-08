@@ -35,14 +35,6 @@
     {
       "name": "music",
       "to": "music"
-    },
-    {
-      "name": "art",
-      "to": "art"
-    },
-    {
-      "name": "blog",
-      "to": "blog"
     }
   ]
 }
