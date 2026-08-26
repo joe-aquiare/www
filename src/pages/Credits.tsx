@@ -36,6 +36,18 @@ function Credits() {
           <SiteTableRow>
             <SiteTableData>
               <ExternalLink
+                href="https://ded.net/en"
+                target="_blank"
+              >
+                PUBG: DED.NET
+              </ExternalLink>
+            </SiteTableData>
+            <SiteTableData>Online Services, Accounts</SiteTableData>
+          </SiteTableRow>
+
+          <SiteTableRow>
+            <SiteTableData>
+              <ExternalLink
                 href="https://www.marathonthegame.com/"
                 target="_blank"
               >
